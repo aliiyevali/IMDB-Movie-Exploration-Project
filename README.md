@@ -1,4 +1,4 @@
-Compilation of SQL, Tableau, Python , Excel data analysis related projects and challenges where I practice those skills.
+Compilation of SQL, Tableau, Python , Excel data analysis related projects and challenges where I practiced those skills.
 Tools:
  My SQL
  Tableau 

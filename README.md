@@ -32,7 +32,7 @@ Part 2: Hypothesis testing
 
 Upon examination of our data matrix, we gain insight into various interrelationships. Among these, one of the most compelling findings pertains to the interaction between critical assessments and audience reception. These terms are demonstrated by 'Rotten Tomatoes Audience' and 'Tomatometer' columns. From color scales, it is evident that correlation is approximately 0.4. It's apparent that this relationship is not extensive, and this observation is quite comprehensible. This contrast originates from the inherent disparity in how audiences and critics evaluate films, each providing distinct viewpoints.
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/4aa0c8cf-af97-4552-bfd5-4139ec0d4f46)
+![Colors](https://github.com/aliiyevali/Movie-Project/assets/147966223/838e7afc-023c-4b7f-a900-201f6b498eb1)
 
  
 A second prominent correlation lies in the link between IMDB ratings and profitability. Contemplating this relationship, one is prompted to consider a director's preference: a greater emphasis on profitability or an enhanced focus on audience satisfaction. Furthermore, a pivotal question arises regarding the extent to which these two influential factors are interconnected.

@@ -14,8 +14,9 @@ To address this significant concern, I have strategically implemented the concep
 In my pursuit of addressing this critical inquiry, I shall embark on a practical analysis.
 In this analysis, I commenced by plotting the data to assess its suitability for the implementation of confidence intervals.
 implementation of confidence intervals.
- 
-![Shikowo](https://github.com/aliiyevali/Movie-Project/assets/147966223/283c5b56-7309-40e3-beb6-d00c54629250)
+
+![Ikea2](https://github.com/aliiyevali/Movie-Project/assets/147966223/85bb96d2-66c4-48bb-ac77-f555b5950f14)
+
 
 Upon initial examination, it becomes evident that the data deviates from a normal distribution. This is where the Central Limit Theorem (CLT) plays a pivotal role. Certain adjustments made to facilitate the attainment of a normal distribution while retaining valuable information.
 
@@ -64,7 +65,7 @@ Part 4 – Linear Regression Model
 
 Initially, the data underwent a thorough outlier removal process. This step was essential to eliminate data points that exhibited exceptionally low profit values, which were deemed as outliers due to their implausibility and potential inaccuracies. Occasionally, extremely deviant data points may stem from erroneous data entry. In this context, I hold a degree of suspicion that our dataset may also include some. So that’s another reason for deleting them.
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/8df76e15-5934-4840-80f6-7a755dd51025)
+![Shikowo](https://github.com/aliiyevali/Movie-Project/assets/147966223/283c5b56-7309-40e3-beb6-d00c54629250)
  
 We generated two dummy variables. The first one, with categories 'strong,' 'weak,' and 'middle,' assesses the profitability of specific film genres. In the 'strong' column, a value of 1 represents strong profitability, while 0 signifies otherwise. The second dummy variable evaluates the presence of top 250 stars in the cast. For instance, if four top 250 stars are part of the cast, the 'fouractors' column receives a value of 1.
 In the subsequent phase, we optimized our dataset for the analysis by adhering to the 'n-1' dummy variable rule. Consequently, we made the decision to remove the 'Noactor' and 'Strong' columns. These columns are regarded as benchmarks, and their removal streamlines the data, rendering it more conducive for the analysis.

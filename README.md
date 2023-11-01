@@ -103,7 +103,7 @@ Upon examining the weight coefficients, we gain meaningful insights. Notably, we
 
 These logical outcomes provide assurance regarding the absence of omitted bias, which is a crucial concern in linear regressions. Omitted bias is a potentially detrimental assumption,, and its nonexistence within our model instills confidence in our findings.
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/7730e6b0-eeed-4257-bd85-4bd0585f41d7)
+![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/38324407-6284-47b8-b4b5-a6b3d81d7aad)
 
 Conclusion:
 

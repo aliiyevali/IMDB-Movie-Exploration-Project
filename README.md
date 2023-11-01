@@ -71,15 +71,15 @@ We generated two dummy variables. The first one, with categories 'strong,' 'weak
 In the subsequent phase, we optimized our dataset for the analysis by adhering to the 'n-1' dummy variable rule. Consequently, we made the decision to remove the 'Noactor' and 'Strong' columns. These columns are regarded as benchmarks, and their removal streamlines the data, rendering it more conducive for the analysis.
 Upon closer examination, I noticed that the correlation between TMDB ratings and profit was relatively weak. To enhance our analysis and achieve linearity, I decided to transform the profit data into its logarithmic form. This transformation not only strengthens the relationship but also helps mitigate issues related to assumption called Heteroscedasticity. 
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/867a57b8-44f9-4659-b953-c2a34795ab7a)
+<img width="1040" alt="Screenshot 2023-11-01 at 3 21 15 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/7165eed1-e068-4440-b672-ebd54ab79ab8">
 
 In the process of examining multicollinearity, we made the decision to omit certain columns. Notably, we removed the 'Year' column due to its strong influence on 'Budget. "Over time, the movie industry tends to advance, leading to improvements in both movie business and budgets. These advancements can be influenced by the impact of inflation too. Similarly, the 'Time' column was excluded due to a high correlation. In the final model, we retained seven factors, which is considered acceptable. 
  
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/8dfc836f-4387-46ac-9186-8a5b6967249a)
+<img width="1089" alt="Screenshot 2023-11-01 at 3 25 28 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/9eb62aba-918b-40f7-b2a5-ca48ed5f467c">
 
 The columns within our final dataset exhibit some multicollinearity. However, these VIF values remain within an acceptable range.
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/87d3818a-c20f-49d6-bd32-e430e75da831)
+<img width="963" alt="Screenshot 2023-11-01 at 3 27 36 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/4f424bc6-ba8f-40e9-af8f-65457d81053f">
 
 As a result, we proceeded with 'Actors,' 'Genres,' 'Budget,' and 'TMDB' as the key factors in our analysis. Since all audience rankings are strongly correlated with each other, we randomly selected 'TMDB' for our analysis. It's important to emphasize that similar results could be obtained if other rankings were chosen for this purpose.
 It's important to highlight that we standardized our values, ensuring that our results remain unaffected by variations in data scales.

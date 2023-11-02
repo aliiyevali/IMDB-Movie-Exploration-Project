@@ -15,7 +15,7 @@ In my pursuit of addressing this critical inquiry, I shall embark on a practical
 In this analysis, I commenced by plotting the data to assess its suitability for the implementation of confidence intervals.
 implementation of confidence intervals.
 
-![Ikea2](https://github.com/aliiyevali/Movie-Project/assets/147966223/85bb96d2-66c4-48bb-ac77-f555b5950f14)
+<img width="575" alt="Screenshot 2023-11-02 at 9 09 04 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/117e8ece-ef3a-42e9-a449-a3e7492b87ea">
 
 
 Upon initial examination, it becomes evident that the data deviates from a normal distribution. This is where the Central Limit Theorem (CLT) plays a pivotal role. Certain adjustments made to facilitate the attainment of a normal distribution while retaining valuable information.

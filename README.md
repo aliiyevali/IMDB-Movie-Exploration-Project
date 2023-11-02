@@ -65,7 +65,7 @@ Part 4 – Linear Regression Model
 
 Initially, the data underwent a thorough outlier removal process. This step was essential to eliminate data points that exhibited exceptionally low profit values, which were deemed as outliers due to their implausibility and potential inaccuracies. Occasionally, extremely deviant data points may stem from erroneous data entry. In this context, I hold a degree of suspicion that our dataset may also include some. So that’s another reason for deleting them.
 
-![Shikowo](https://github.com/aliiyevali/Movie-Project/assets/147966223/283c5b56-7309-40e3-beb6-d00c54629250)
+<img width="575" alt="Screenshot 2023-11-02 at 9 09 04 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/117e8ece-ef3a-42e9-a449-a3e7492b87ea">
  
 We generated two dummy variables. The first one, with categories 'strong,' 'weak,' and 'middle,' assesses the profitability of specific film genres. In the 'strong' column, a value of 1 represents strong profitability, while 0 signifies otherwise. The second dummy variable evaluates the presence of top 250 stars in the cast. For instance, if four top 250 stars are part of the cast, the 'fouractors' column receives a value of 1.
 In the subsequent phase, we optimized our dataset for the analysis by adhering to the 'n-1' dummy variable rule. Consequently, we made the decision to remove the 'Noactor' and 'Strong' columns. These columns are regarded as benchmarks, and their removal streamlines the data, rendering it more conducive for the analysis.

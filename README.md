@@ -90,7 +90,7 @@ Let's conclude with a look at our last two linearity graphs.
 
 Upon performing predictions, we notice that our model encounters challenges in accurately forecasting profits as they increase, but it performs relatively well for lower profit ranges.
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/0f6b73a1-2e4f-43ed-a62a-c70f65bac7e7)
+<img width="560" alt="Screenshot 2023-11-02 at 9 15 38 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/205fdea0-d7f4-4b06-914c-bcb2c61c9b78">
 
 While the residuals are substantial, this outcome aligns with our expectations, given the broad-scale nature of our data and an R-Square value of 0.42.  
 

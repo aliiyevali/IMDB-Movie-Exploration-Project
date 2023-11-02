@@ -88,7 +88,7 @@ Let's conclude with a look at our last two linearity graphs.
  
 <img width="1095" alt="Screenshot 2023-11-01 at 3 30 26 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/669ceb54-c60c-46f5-93fa-2e0ad19aba72">
 
-Upon performing predictions, we notice that our model encounters challenges in accurately forecasting profits as they increase, but it performs relatively well for lower profit ranges.
+Upon performing predictions, we notice that our model encounters challenges in accurately forecasting profits as they increase, but it performs relatively well for lower profit ranges.There are reasons for that. Our data is not a random data and we have scraped most profited 1000 films ever. While model understand pattern on low profited movies of our data it is so hard to predict as profit increase. For example, Avatar is most profited film ever. Has that film resulted that profit from its genres, actors, rating? Probably none of them. At this stage release dates, market rivalries in that time period and budget divisions play more crucial role and our model is not aware of these factors.
 
 <img width="560" alt="Screenshot 2023-11-02 at 9 15 38 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/205fdea0-d7f4-4b06-914c-bcb2c61c9b78">
 

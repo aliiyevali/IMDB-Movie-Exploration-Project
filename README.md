@@ -98,7 +98,7 @@ While the residuals are substantial, this outcome aligns with our expectations, 
 
 Notably, our analysis reveals no significant relationship between our independent variables and the residuals. This absence of endogeneity is a favorable outcome, indicating the model's robustness and a successful violation of one less assumption.
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/919ef3e8-bb0c-4dd2-a2a0-fc210debc15a)
+![Beau](https://github.com/aliiyevali/Movie-Project/assets/147966223/619b1233-d0bd-4efc-b6f5-df1d3b8224d6)
 
 Upon examining the weight coefficients, we gain meaningful insights. Notably, we observe logical trends: an increase in budget is associated with an increase in profit, and higher TMDB ratings also correlate with increased profits. Furthermore, we notice that films featuring more popular actors have higher weight coefficients, suggesting that 'fouractors' films generate more profit compared to 'noactor' films, and even 'threeactors' films exhibit better profitability.
 

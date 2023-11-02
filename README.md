@@ -20,7 +20,7 @@ implementation of confidence intervals.
 
 Upon initial examination, it becomes evident that the data deviates from a normal distribution. This is where the Central Limit Theorem (CLT) plays a pivotal role. Certain adjustments made to facilitate the attainment of a normal distribution while retaining valuable information.
 
-![Nagatomo](https://github.com/aliiyevali/Movie-Project/assets/147966223/728db91a-afd9-4e95-ae84-c80f8d9282fa)
+<img width="589" alt="Screenshot 2023-11-02 at 9 13 09 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/725b7bd2-e591-4a18-98dd-b6657f3bc656">
 
 As the data conforms to a normal distribution, I proceed with the implementation of confidence intervals. Based on our population result derived from our sample data, we can make conclusions, as follows:
 

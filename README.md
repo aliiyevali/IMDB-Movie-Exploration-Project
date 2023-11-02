@@ -86,7 +86,7 @@ It's important to highlight that we standardized our values, ensuring that our r
 
 Let's conclude with a look at our last two linearity graphs.
  
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/bb92348f-73b2-40ba-b6a8-ec1b6b6a1898)
+<img width="1095" alt="Screenshot 2023-11-01 at 3 30 26 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/669ceb54-c60c-46f5-93fa-2e0ad19aba72">
 
 Upon performing predictions, we notice that our model encounters challenges in accurately forecasting profits as they increase, but it performs relatively well for lower profit ranges.
 
@@ -94,7 +94,7 @@ Upon performing predictions, we notice that our model encounters challenges in a
 
 While the residuals are substantial, this outcome aligns with our expectations, given the broad-scale nature of our data and an R-Square value of 0.42.  
 
-![image](https://github.com/aliiyevali/Movie-Project/assets/147966223/025041f5-cbf5-4e8f-84c9-39b25c7cc924)
+<img width="1053" alt="Screenshot 2023-11-01 at 3 31 59 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/1a7b4350-0e86-4896-b8a0-f607689d60be">
 
 Notably, our analysis reveals no significant relationship between our independent variables and the residuals. This absence of endogeneity is a favorable outcome, indicating the model's robustness and a successful violation of one less assumption.
 

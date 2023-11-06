@@ -42,6 +42,8 @@ A second prominent correlation lies in the link between IMDB ratings and profita
  
 Based on the findings, a noteworthy relationship is evident. However, it's important to note that while the relationship is statistically significant, it doesn't necessarily signify a strong connection. Within our sample data, the calculated correlation coefficient between these two variables was 0.2 as shown in one of the pictures above. This value suggests that the relationship within our sample is relatively weak. We can interpret that score as there are instances where certain movies achieved substantial profits despite not being well-received by the audience. On the flip side, certain movies received substantial acclaim from audiences but generated less profit compared to other films that were already being surpassed by them in audience rankings. The scatter plot below clearly represents those findings. We delve more into that part in our Linear regression model.   
 
+![download (2)](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/c123c595-9b2a-4392-a368-f6e264b0b0fe)
+
 Part 3: Visualizations
 
 •	Genre Profitability Breakdown Chart:

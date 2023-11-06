@@ -33,6 +33,8 @@ However, the director couldn’t make up his mind and expressed an interest in e
 
 Part 2: Hypothesis testing
 
+<img width="1098" alt="Screenshot 2023-11-05 at 3 12 02 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/34d81c02-f3eb-443b-bd90-6a0ecdace108">
+
 Upon examination of our data, we can calculate various interrelationships. One of the most compelling findings pertains to the interaction between critics’ assessments and audience reception. These terms are demonstrated by the 'Rotten Tomatoes Audience' and 'Tomatometer' columns. From the First codes, it is evident that the correlation is approximately 0.73. It's apparent that this relationship is quite strong. While the perspective and metrics of Audiences and critics may differ, in the end they ranked movies similarly.  
 A second prominent correlation lies in the link between IMDB ratings and profitability. Contemplating this relationship, one is prompted to consider a director's preference: a greater emphasis on profitability or an enhanced focus on audience satisfaction. Furthermore, a pivotal question arises regarding the extent to which these two influential factors are interconnected. 
  

@@ -7,7 +7,9 @@ In this project, I will delve into the captivating world of movie analysis, offe
 Let's begin by outlining the foundational elements of our dataset. It has been meticulously curated through the scraping of data from three distinct websites, ensuring a diverse range of data types and information. This diversity is crucial, as it accommodates the multifaceted nature of movie analysis, catering to a variety of analytical objectives. 
 When I contemplate the world of cinema, we often think about genres, and rightly so. My primary focus will be on movie genres in the visualization stage. However, my analytical journey encompasses an array of critical factors, including the movie's release year, actors, budget, and profitability. All these elements will be employed in my comprehensive analysis, enabling me to glean valuable insights from this rich and multifarious dataset.
 Scraping was the first stage of analysis. At the end of the first stage, we had a Data frame with 3 different audiences and one critical Ranking, Cast, Genres, and Profit: including domestic and foreign percentages, Links, Years, Time, directors, and so on. We specially added some highly profited films as well as some flops to analyze the industry better and give some patterns that resonates population better.
+
 <img width="782" alt="Screenshot 2023-11-05 at 2 58 27 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/ee52eb3b-66a2-4cb5-8c4f-a90e47781927">
+
 Part 1: Confidence Intervals
 
 In the context of analysis, I present a scenario involving a film director faced with a pivotal decision - whether to invest in a movie based on an exceptional plot. This director's dilemma lies in the uncertainty of whether the chosen plot will meet his expected objectives in terms of profit. 

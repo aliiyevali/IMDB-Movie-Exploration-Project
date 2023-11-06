@@ -144,7 +144,7 @@ We observe an R-square of 0.41. It means our model explains 41% of profitability
  
 When observing the distribution of residuals, we notice it is normally distributed, mean is so close to 0. These 2 results mean we are free from another 2 critical assumptions. (Zero Mean & Normality eliminated 5/8)
 
-<img width="1053" alt="Screenshot 2023-11-01 at 3 31 59 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/1a7b4350-0e86-4896-b8a0-f607689d60be">
+![download (5)](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/a13f18d9-3725-47a0-8758-0a468e78fb97)
   
 Notably, our analysis reveals no significant relationship between our independent variables and the residuals. This absence of endogeneity is favorable 
 outcome, indicating the model's robustness and successful avoidance of one more assumption. (Endogeneity eliminated 6/8) 

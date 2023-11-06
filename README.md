@@ -122,11 +122,13 @@ In the process of examining multicollinearity, I decided to omit certain columns
 <img width="1109" alt="Screenshot 2023-11-05 at 4 30 38 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/c432608d-f1be-4a3a-b468-bf41deeda345">
  
 The columns of our final dataset and their VIFs are represented below. Their VIF values remain within an acceptable range. (Multicollinearity eliminated 2/8) 
-
+<img width="1097" alt="Screenshot 2023-11-05 at 4 57 43 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/2003f31a-7e26-47fe-84f7-75302391f1b2">
 <img width="1121" alt="Screenshot 2023-11-05 at 4 40 34 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/1c7c79d6-ae51-4847-af7b-e285bd10f732">
 
 As a result, we proceeded with 'Actors,' 'Genres,' 'Budget,' and 'TMDB' as the key factors in our analysis. Since all audience rankings are strongly correlated with each other, we randomly selected 'TMDB' for our analysis. It's important to emphasize that similar results could be obtained if other rankings were chosen for this purpose.
 It's important to highlight that we standardized our values, ensuring that our results remain unaffected by variations in data scales. Let's conclude with a look at our last two linearity graphs. (Linearity eliminated 3/8)
+
+<img width="1095" alt="Screenshot 2023-11-01 at 3 30 26 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/669ceb54-c60c-46f5-93fa-2e0ad19aba72">
  
 As you can observe from the codes after creating the model first thing, I implemented was dividing my data into training and test datasets. One of the biggest concerns when creating regression models is overfitting and underfitting. Overfitting means that the model considers the initial data so high that whenever the same model is tried on new datasets it fails to predict. The best way to avoid this problem is by implementing train-test-split.
  

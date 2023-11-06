@@ -66,6 +66,8 @@ This time series analysis provides a historical perspective on how foreign and d
 Part 4 –Clustering & Preparing for Model
 
 First, we need to decide on independent and dependent variables. Asking questions like What is the best metric for determining movie success can also be intuitive in that first stage of model creation. Furthermore, answering this question requires deep knowledge of data that why data analysis is the most crucial step. For better understanding, I created a color matrix that displays the relationship between core variables. How these variables have been  assessed as core and the reason why they have been chosen over others will be clarified in the Multicollinearity assumption and VIF calculations section. 
+
+![download (3)](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/7bf73cb9-98bc-4b8e-96c2-262be9567272)
  
 We can call this stage the independent variable elimination process because which values that will be selected for modelling are determined in that stage. In those stages, it is better to continue with most correlated variables with dependent variables. In our case, Profit is represented as ‘worldwide’ chosen as the dependent variable. 
 After choosing core independent variables, it is time to analyze them deeper, making transformations if needed and analyzing their relationship with dependent variables deeper often as scatter plots. We already decided on the dependent variable, it is time to analyze its distribution and delete some outliers if there are any. Extreme outliers can increase the complexity of our data. It will create problems for the model to understand patterns and making better predictions.

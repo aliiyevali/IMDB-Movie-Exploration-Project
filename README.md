@@ -10,7 +10,7 @@ Scraping was the first stage of analysis. At the end of the first stage, we had 
 
 <img width="782" alt="Screenshot 2023-11-05 at 2 58 27 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/ee52eb3b-66a2-4cb5-8c4f-a90e47781927">
 
--
+
 Part 1: Confidence Intervals
 
 In the context of analysis, I present a scenario involving a film director faced with a pivotal decision - whether to invest in a movie based on an exceptional plot. This director's dilemma lies in the uncertainty of whether the chosen plot will meet his expected objectives in terms of profit. 

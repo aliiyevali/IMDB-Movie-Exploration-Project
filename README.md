@@ -72,14 +72,26 @@ First, we need to decide on independent and dependent variables. Asking question
 We can call this stage the independent variable elimination process because which values that will be selected for modelling are determined in that stage. In those stages, it is better to continue with most correlated variables with dependent variables. In our case, Profit is represented as ‘worldwide’ chosen as the dependent variable. 
 After choosing core independent variables, it is time to analyze them deeper, making transformations if needed and analyzing their relationship with dependent variables deeper often as scatter plots. We already decided on the dependent variable, it is time to analyze its distribution and delete some outliers if there are any. Extreme outliers can increase the complexity of our data. It will create problems for the model to understand patterns and making better predictions.
 	 After deciding on numerical values, I also need to utilize some dummies for better model performance. I decided to add two dummies. One includes how many top actors played in that film while the other will be about genres. These 2 can affect movie profit extensively. We already scraped the most popular actors from the IMDB website, so we need to create columns that showcase how many of them participating in that movie.  
+
+<img width="1103" alt="Screenshot 2023-11-05 at 3 57 34 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/6981794a-5473-463c-a4bd-814f02647053">
+
 First, we created column named BestActorPresent, to show how many most popular actors played. Then we divided that column into 5 ones as the maximum number in that column was 4. This action will give better results while implementing predictions.
 Our first dummy columns are ready, We need to create one that contains data for genres. I will do it by the help of k-means clustering and elbow method. This machine learning algorithm will group movies for us based on their genres and profitability. One thing k-means clustering struggles to much is scales of variables that’s why standardization is so crucial in that process. However, one question comes to mind. How many groups must be included? The elbow method comes in to help us determine it.
+
+<img width="905" alt="Screenshot 2023-11-05 at 4 04 19 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/d8251f0f-345e-41e7-a2d5-c43f34194d7f">
  
 The elbow method often shows one break point looks like an elbow that after that point, line starts to plateau. Unfortunately, it is not that easy in our case so we implemented the method by different k’s and decided on model best groups when k is equal to 6.
 As our case includes Different genres as different columns there is no logical graphical way to show results in that way. But we can interpret results with our mathematical skills.
+
+<img width="1077" alt="Screenshot 2023-11-05 at 4 09 24 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/762385cb-a684-44d0-8413-ac98f967b0eb">
  
-The first dimension of parting was profit. As we can see profits of different clusters differ significantly.  
+The first dimension of parting was profit. As we can see profits of different clusters differ significantly.
+
+<img width="1030" alt="Screenshot 2023-11-05 at 4 11 39 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/75889962-441b-416b-8d0d-a64a3c69e67a">
+
 These graphs show the same means and the distribution of those groups better. As we notice the number of them is different, while the first graph has more data the last one has less. The third group probably includes more general genres while the last one is more specific. Let’s identify this issue.
+
+<img width="1101" alt="Screenshot 2023-11-05 at 4 18 45 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/54751e4e-d76f-43d3-a72a-22b06df5b7f1">
  
 We observed our thesis was correct. While the third group included more general genres the last one is so specific. You can imagine our third group movies like Deadpool while the last one can be imagined as Titanic ones.
 	Our numerical variables are ready, our Dummies & Clusters are ready, and we analyzed data very deeply by including visualizations with the help of Tableau dashboards, it is time to create an actual model.
@@ -97,6 +109,8 @@ Let’s start with addressing all conditions or assumptions that need to be met 
 8.	Omitted variable bias
 
 So, the data underwent a thorough outlier removal process. During analysis, we observed extremely deviant data points and they may stem from erroneous data entry. In this context, I hold a degree of suspicion that our dataset may also include some. So that’s another reason for deleting them. A data scientist must maintain the balance of deleting a sufficient number of outliers as excessive deleting can cause losses of valuable data. Our latest Profit distribution:
+
+<img width="575" alt="Screenshot 2023-11-02 at 9 09 04 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/117e8ece-ef3a-42e9-a449-a3e7492b87ea">
  
 In the subsequent phase, we optimized our dataset for the analysis by adhering to the 'n-1' dummy variable rule. Consequently, we decided to remove the 'Noactor' columns. This column will be regarded as a benchmark. As you will see its removal streamlines the data, rendering it more conducive for the analysis.
 Upon closer examination, I noticed that the relationship between TMDB ratings and profit was not linear as expected. To enhance our analysis and achieve linearity, I decided to transform the profit data into its logarithmic form. This transformation not only strengthens the relationship but also helps mitigate issues related to the assumption called Heteroscedasticity. (Heteroscedasticity eliminated 1/8)

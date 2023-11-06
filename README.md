@@ -114,11 +114,17 @@ So, the data underwent a thorough outlier removal process. During analysis, we o
  
 In the subsequent phase, we optimized our dataset for the analysis by adhering to the 'n-1' dummy variable rule. Consequently, we decided to remove the 'Noactor' columns. This column will be regarded as a benchmark. As you will see its removal streamlines the data, rendering it more conducive for the analysis.
 Upon closer examination, I noticed that the relationship between TMDB ratings and profit was not linear as expected. To enhance our analysis and achieve linearity, I decided to transform the profit data into its logarithmic form. This transformation not only strengthens the relationship but also helps mitigate issues related to the assumption called Heteroscedasticity. (Heteroscedasticity eliminated 1/8)
+
+<img width="1040" alt="Screenshot 2023-11-01 at 3 21 15 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/7165eed1-e068-4440-b672-ebd54ab79ab8">
  
 In the process of examining multicollinearity, I decided to omit certain columns. Notably, we removed the 'Year' column due to its strong influence on the budget. Over time, the movie industry tends to advance, leading to improvements in both movie business and budgets. These advancements can be influenced by the impact of inflation too. Similarly, the “Time” column was excluded due to a high correlation. It is also logical, as the years go by, duration of movies increases, some long movies may feel like boring and result in poor ratings. In the final model, we retained seven factors, which is considered acceptable. 
+
+<img width="1109" alt="Screenshot 2023-11-05 at 4 30 38 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/c432608d-f1be-4a3a-b468-bf41deeda345">
  
 The columns of our final dataset and their VIFs are represented below. Their VIF values remain within an acceptable range. (Multicollinearity eliminated 2/8) 
- 
+
+<img width="1121" alt="Screenshot 2023-11-05 at 4 40 34 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/1c7c79d6-ae51-4847-af7b-e285bd10f732">
+
 As a result, we proceeded with 'Actors,' 'Genres,' 'Budget,' and 'TMDB' as the key factors in our analysis. Since all audience rankings are strongly correlated with each other, we randomly selected 'TMDB' for our analysis. It's important to emphasize that similar results could be obtained if other rankings were chosen for this purpose.
 It's important to highlight that we standardized our values, ensuring that our results remain unaffected by variations in data scales. Let's conclude with a look at our last two linearity graphs. (Linearity eliminated 3/8)
  

@@ -25,6 +25,8 @@ Upon initial examination, it becomes evident that the data deviates from a norma
 <img width="589" alt="Screenshot 2023-11-02 at 9 13 09 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/725b7bd2-e591-4a18-98dd-b6657f3bc656">
 
 As the data conforms to a normal distribution, I proceed with the implementation of confidence intervals. Based on our population result derived from our sample data, we can make conclusions, as follows:
+
+<img width="1094" alt="Screenshot 2023-11-01 at 1 13 31 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/dba7415c-09c8-4580-b801-40bb319d8b54">
  
 The decision to maintain the same genres or opt for changes ultimately rests with the director and his financial objectives. 
 However, the director couldn’t make up his mind and expressed an interest in examining the deeper analysis of different genres. I will fulfill this request during the visualization stage of the project.

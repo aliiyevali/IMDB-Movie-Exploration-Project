@@ -1,50 +1,63 @@
-Comprehensive Movie Analysis
+Results and Interpretations from Comprehensive Movie Analysis![image](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/85a63c4f-4fea-4ce4-9093-5d81faaa9f41)
+
 
 Introduction
 
 In this project, I will delve into the captivating world of movie analysis, offering insights into intriguing facts, addressing key questions, and elucidating the intricacies of our analytical approach.
-Let's begin by outlining the foundational elements of our dataset. It has been meticulously curated through the scraping of data from three distinct websites, ensuring a diverse range of data types and information. This diversity is crucial, as it accommodates the multifaceted nature of movie analysis, catering to a variety of analytical objectives.
-When I contemplate the world of cinema, we often think about genres, and rightly so. My primary focus will be on movie genres in visualization stage. However, my analytical journey encompasses an array of critical factors, including the movie's release year, actors, budget and profitability. All these elements will be employed in my comprehensive analysis, enabling me to glean valuable insights from this rich and multifarious dataset.
+Let's begin by outlining the foundational elements of our dataset. It has been meticulously curated through the scraping of data from three distinct websites, ensuring a diverse range of data types and information. This diversity is crucial, as it accommodates the multifaceted nature of movie analysis, catering to a variety of analytical objectives. 
+When I contemplate the world of cinema, we often think about genres, and rightly so. My primary focus will be on movie genres in the visualization stage. However, my analytical journey encompasses an array of critical factors, including the movie's release year, actors, budget, and profitability. All these elements will be employed in my comprehensive analysis, enabling me to glean valuable insights from this rich and multifarious dataset.
+Scraping was the first stage of analysis. At the end of the first stage, we had a Data frame with 3 different audiences and one critical Ranking, Cast, Genres, and Profit: including domestic and foreign percentages, Links, Years, Time, directors, and so on. We specially added some highly profited films as well as some flops to analyze the industry better and give some patterns that resonates population better.
+![image](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/5ae28bcf-d2fe-4661-bb11-f9ea1db83334)
+
+ 
 
 
 Part 1: Confidence Intervals
 
-In the context of my analysis, I present a scenario involving a film director faced with a pivotal decision - whether to invest in a movie based on an exceptional plot. This director's dilemma lies in the uncertainty of whether the chosen plot will meet their expected objectives in terms of profit. 
-To address this significant concern, I have strategically implemented the concept of confidence intervals. Specifically, I will consider a movie plot that prominently features the Adventure and Fantasy genres. The director is seeking answers to questions that revolve around the suitability of these genres. Does the plot require adjustments or perhaps a shift towards different genres? 
+In the context of analysis, I present a scenario involving a film director faced with a pivotal decision - whether to invest in a movie based on an exceptional plot. This director's dilemma lies in the uncertainty of whether the chosen plot will meet his expected objectives in terms of profit. 
+To address this significant concern, I have strategically implemented the concept of confidence intervals. Specifically, I will consider a movie plot that prominently features the Adventure and Fantasy genres. The director is seeking answers to questions that revolve around the profitability of these genres. Does the plot require adjustments or perhaps a shift toward different genres? 
 In my pursuit of addressing this critical inquiry, I shall embark on a practical analysis.
-In this analysis, I commenced by plotting the data to assess its suitability for the implementation of confidence intervals.
-implementation of confidence intervals.
-
-![download (1)](https://github.com/aliiyevali/Movie-Project/assets/147966223/6ea23ab4-fd57-4b47-b8db-8821112249b6)
+In the graph below, I commenced by plotting the data to assess its suitability for the implementation of confidence intervals.
 
 
-Upon initial examination, it becomes evident that the data deviates from a normal distribution. This is where the Central Limit Theorem (CLT) plays a pivotal role. Certain adjustments made to facilitate the attainment of a normal distribution while retaining valuable information.
+ 
+Upon initial examination, it becomes evident that the data deviates from a normal distribution. This is where the Central Limit Theorem (CLT) plays a pivotal role. Certain adjustments are made to facilitate the attainment of a normal distribution while retaining valuable information. 
 
-<img width="589" alt="Screenshot 2023-11-02 at 9 13 09 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/725b7bd2-e591-4a18-98dd-b6657f3bc656">
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 As the data conforms to a normal distribution, I proceed with the implementation of confidence intervals. Based on our population result derived from our sample data, we can make conclusions, as follows:
+ 
 
-<img width="1094" alt="Screenshot 2023-11-01 at 1 13 31 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/dba7415c-09c8-4580-b801-40bb319d8b54">
-
-The decision to maintain the same genres or opt for changes ultimately rests with the director. 
-However, the director couldn’t make his mind and expresses an interest in examining the analysis of different genres. I will fulfill this request during the visualization stage of the project.
+The decision to maintain the same genres or opt for changes ultimately rests with the director and his financial objectives. 
+However, the director couldn’t make up his mind and expressed an interest in examining the deeper analysis of different genres. I will fulfill this request during the visualization stage of the project.
 
 Part 2: Hypothesis testing
 
-Upon examination of our data matrix, we gain insight into various interrelationships. Among these, one of the most compelling findings pertains to the interaction between critical assessments and audience reception. These terms are demonstrated by 'Rotten Tomatoes Audience' and 'Tomatometer' columns. From color scales, it is evident that correlation is approximately 0.4. It's apparent that this relationship is not extensive, and this observation is quite comprehensible. This contrast originates from the inherent disparity in how audiences and critics evaluate films, each providing distinct viewpoints.
-
-![download](https://github.com/aliiyevali/Movie-Project/assets/147966223/09a2d094-513a-4eed-8f15-7e3c36364ade)
 
  
-A second prominent correlation lies in the link between IMDB ratings and profitability. Contemplating this relationship, one is prompted to consider a director's preference: a greater emphasis on profitability or an enhanced focus on audience satisfaction. Furthermore, a pivotal question arises regarding the extent to which these two influential factors are interconnected.
+Upon examination of our data, we can calculate various interrelationships. One of the most compelling findings pertains to the interaction between critics’ assessments and audience reception. These terms are demonstrated by the 'Rotten Tomatoes Audience' and 'Tomatometer' columns. From the First codes, it is evident that the correlation is approximately 0.73. It's apparent that this relationship is quite strong. While the perspective and metrics of Audiences and critics may differ, in the end they ranked movies similarly.  
+A second prominent correlation lies in the link between IMDB ratings and profitability. Contemplating this relationship, one is prompted to consider a director's preference: a greater emphasis on profitability or an enhanced focus on audience satisfaction. Furthermore, a pivotal question arises regarding the extent to which these two influential factors are interconnected. 
  
-<img width="1095" alt="Screenshot 2023-11-01 at 1 20 25 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/af223e38-0d77-451a-b9da-93f2868e2ffa">
 
-Based on the findings, a noteworthy relationship is evident. However, it's important to note that while the relationship is statistically significant, it doesn't necessarily signify a strong connection. Within our sample data, the calculated correlation coefficient between these two variables is 0.23. This value suggests that the relationship within our sample is relatively weak. We also observe that there are instances where certain movies achieved substantial profits despite not being well-received by the audience. Conversely, some movies garnered significant audience appreciation but yielded less profit than others. We delve more into that part in our Linear regression model.
+Based on the findings, a noteworthy relationship is evident. However, it's important to note that while the relationship is statistically significant, it doesn't necessarily signify a strong connection. Within our sample data, the calculated correlation coefficient between these two variables was 0.2 as shown in one of the pictures above. This value suggests that the relationship within our sample is relatively weak. We can interpret that score as there are instances where certain movies achieved substantial profits despite not being well-received by the audience. On the flip side, certain movies received substantial acclaim from audiences but generated less profit compared to other films that were already being surpassed by them in audience rankings. The scatter plot below clearly represents those findings. We delve more into that part in our Linear regression model.   
 
 Part 3: Visualizations
 
-<img width="1440" alt="Screenshot 2023-10-31 at 4 24 10 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/5f7f98c1-2a0c-4fb9-8b19-6bab777eac07">
+ 
+
 
 •	Genre Profitability Breakdown Chart:
 This chart provides a comprehensive view of profitability in the film industry by genre. Each bar represents the total profit generated by movies in a specific genre. It allows us to discern which genres are most lucrative and which ones are less so. This information is vital for filmmakers and studios seeking to invest wisely and maximize returns.
@@ -53,60 +66,102 @@ This chart provides a comprehensive view of profitability in the film industry b
 In this bubble chart, I explored the relationship between the number of movies (represented on the x-axis) and the count of movies in each genre (displayed on the y-axis). Each bubble corresponds to a genre, with its size indicating the profitability of movies in that genre. This chart unveils insights into the trade-off between producing more movies and their respective profitability, helping industry professionals make informed decisions.
 
 •	Director Profitability by MPAA Bars:
-This bar chart presents a detailed breakdown of director profitability, highlighting the total profits they've accumulated from all their movies. The bars based on the MPAA ratings of their movies, providing a visual narrative of how directors' work aligns with different audience demographics. It offers valuable insights for both directors and studios in understanding the financial implications of MPAA ratings.
+This bar chart presents a detailed breakdown of director profitability, highlighting the total profits they've accumulated from all their movies. The bars are based on the MPAA ratings of their movies, providing a visual narrative of how directors' work aligns with different audience demographics. It offers valuable insights for both directors and studios in understanding the financial implications of MPAA ratings.
 
 •	Genre Profit Boxplots:
 The boxplots for genre profits present a visual summary of the profitability distribution within each movie genre. By displaying the spread, central tendency, and outliers, this chart enables a nuanced understanding of how profits vary across different genres. It's another valuable tool for filmmakers and studios to assess the financial landscape within specific genres.
 
 •	Time Series Analysis of Foreign and Domestic Profit:
-This time series analysis provides a historical perspective on how foreign and domestic profits have evolved over the years. Red line represents foreign profit while black line demonstrates domestic one. By tracking the trajectory of profits, it helps stakeholders in the film industry identify trends and make informed decisions about distribution strategies, target audiences, and market dynamics. It's an essential tool for forecasting future profitability.
+This time series analysis provides a historical perspective on how foreign and domestic profits have evolved over the years. The red line represents foreign profit while the black line demonstrates domestic one. Tracking the trajectory of profits helps stakeholders in the film industry identify trends and make informed decisions about distribution strategies, target audiences, and market dynamics. It's an essential tool for forecasting future profitability.
 
-Part 4 – Linear Regression Model
+Part 4 –Clustering & Preparing for Model
 
-Initially, the data underwent a thorough outlier removal process. This step was essential to eliminate data points that exhibited exceptionally low profit values, which were deemed as outliers due to their implausibility and potential inaccuracies. Occasionally, extremely deviant data points may stem from erroneous data entry. In this context, I hold a degree of suspicion that our dataset may also include some. So that’s another reason for deleting them.
-
-<img width="575" alt="Screenshot 2023-11-02 at 9 09 04 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/117e8ece-ef3a-42e9-a449-a3e7492b87ea">
+First, we need to decide on independent and dependent variables. Asking questions like What is the best metric for determining movie success can also be intuitive in that first stage of model creation. Furthermore, answering this question requires deep knowledge of data that why data analysis is the most crucial step. For better understanding, I created a color matrix that displays the relationship between core variables. How these variables have been  assessed as core and the reason why they have been chosen over others will be clarified in the Multicollinearity assumption and VIF calculations section. 
  
-We generated two dummy variables. The first one, with categories 'strong,' 'weak,' and 'middle,' assesses the profitability of specific film genres. In the 'strong' column, a value of 1 represents strong profitability, while 0 signifies otherwise. The second dummy variable evaluates the presence of top 250 stars in the cast. For instance, if four top 250 stars are part of the cast, the 'fouractors' column receives a value of 1.
-In the subsequent phase, we optimized our dataset for the analysis by adhering to the 'n-1' dummy variable rule. Consequently, we made the decision to remove the 'Noactor' and 'Strong' columns. These columns are regarded as benchmarks, and their removal streamlines the data, rendering it more conducive for the analysis.
-Upon closer examination, I noticed that the correlation between TMDB ratings and profit was relatively weak. To enhance our analysis and achieve linearity, I decided to transform the profit data into its logarithmic form. This transformation not only strengthens the relationship but also helps mitigate issues related to assumption called Heteroscedasticity. 
 
-<img width="1040" alt="Screenshot 2023-11-01 at 3 21 15 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/7165eed1-e068-4440-b672-ebd54ab79ab8">
-
-In the process of examining multicollinearity, we made the decision to omit certain columns. Notably, we removed the 'Year' column due to its strong influence on 'Budget. "Over time, the movie industry tends to advance, leading to improvements in both movie business and budgets. These advancements can be influenced by the impact of inflation too. Similarly, the 'Time' column was excluded due to a high correlation. In the final model, we retained seven factors, which is considered acceptable. 
+We can call this stage the independent variable elimination process because which values that will be selected for modelling are determined in that stage. In those stages, it is better to continue with most correlated variables with dependent variables. In our case, Profit is represented as ‘worldwide’ chosen as the dependent variable. 
+After choosing core independent variables, it is time to analyze them deeper, making transformations if needed and analyzing their relationship with dependent variables deeper often as scatter plots. We already decided on the dependent variable, it is time to analyze its distribution and delete some outliers if there are any. Extreme outliers can increase the complexity of our data. It will create problems for the model to understand patterns and making better predictions.
+	 After deciding on numerical values, I also need to utilize some dummies for better model performance. I decided to add two dummies. One includes how many top actors played in that film while the other will be about genres. These 2 can affect movie profit extensively. We already scraped the most popular actors from the IMDB website, so we need to create columns that showcase how many of them participating in that movie.  
+First, we created column named BestActorPresent, to show how many most popular actors played. Then we divided that column into 5 ones as the maximum number in that column was 4. This action will give better results while implementing predictions.
+Our first dummy columns are ready, We need to create one that contains data for genres. I will do it by the help of k-means clustering and elbow method. This machine learning algorithm will group movies for us based on their genres and profitability. One thing k-means clustering struggles to much is scales of variables that’s why standardization is so crucial in that process. However, one question comes to mind. How many groups must be included? The elbow method comes in to help us determine it.
  
-<img width="1089" alt="Screenshot 2023-11-01 at 3 25 28 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/9eb62aba-918b-40f7-b2a5-ca48ed5f467c">
 
-The columns within our final dataset exhibit some multicollinearity. However, these VIF values remain within an acceptable range.
+The elbow method often shows one break point looks like an elbow that after that point, line starts to plateau. Unfortunately, it is not that easy in our case so we implemented the method by different k’s and decided on model best groups when k is equal to 6.
+As our case includes Different genres as different columns there is no logical graphical way to show results in that way. But we can interpret results with our mathematical skills.
+ 
+The first dimension of parting was profit. As we can see profits of different clusters differ significantly.  
+These graphs show the same means and the distribution of those groups better. As we notice the number of them is different, while the first graph has more data the last one has less. The third group probably includes more general genres while the last one is more specific. Let’s identify this issue.
+ 
 
-<img width="963" alt="Screenshot 2023-11-01 at 3 27 36 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/4f424bc6-ba8f-40e9-af8f-65457d81053f">
+We observed our thesis was correct. While the third group included more general genres the last one is so specific. You can imagine our third group movies like Deadpool while the last one can be imagined as Titanic ones.
+	Our numerical variables are ready, our Dummies & Clusters are ready, and we analyzed data very deeply by including visualizations with the help of Tableau dashboards, it is time to create an actual model.
+Part 5 – Linear Regression Model
+Let’s start with addressing all conditions or assumptions that need to be met in the linear regressions. 
+1.	Zero mean
+2.	Normality
+3.	Linearity
+4.	No Endogeneity
+5.	No Autocorrelation
+6.	Homoscedasticity/Heteroscedasticity
+7.	Multicollinearity 
+8.	Omitted variable bias
+
+
+So, the data underwent a thorough outlier removal process. During analysis, we observed extremely deviant data points and they may stem from erroneous data entry. In this context, I hold a degree of suspicion that our dataset may also include some. So that’s another reason for deleting them. A data scientist must maintain the balance of deleting a sufficient number of outliers as excessive deleting can cause losses of valuable data. Our latest Profit distribution:
+ 
+
+In the subsequent phase, we optimized our dataset for the analysis by adhering to the 'n-1' dummy variable rule. Consequently, we decided to remove the 'Noactor' columns. This column will be regarded as a benchmark. As you will see its removal streamlines the data, rendering it more conducive for the analysis.
+Upon closer examination, I noticed that the relationship between TMDB ratings and profit was not linear as expected. To enhance our analysis and achieve linearity, I decided to transform the profit data into its logarithmic form. This transformation not only strengthens the relationship but also helps mitigate issues related to the assumption called Heteroscedasticity. (Heteroscedasticity eliminated 1/8)
+ 
+
+In the process of examining multicollinearity, I decided to omit certain columns. Notably, we removed the 'Year' column due to its strong influence on the budget. Over time, the movie industry tends to advance, leading to improvements in both movie business and budgets. These advancements can be influenced by the impact of inflation too. Similarly, the “Time” column was excluded due to a high correlation. It is also logical, as the years go by, duration of movies increases, some long movies may feel like boring and result in poor ratings. In the final model, we retained seven factors, which is considered acceptable. 
+ 
+
+The columns of our final dataset and their VIFs are represented below. Their VIF values remain within an acceptable range. (Multicollinearity eliminated 2/8) 
+ 
+
+
 
 As a result, we proceeded with 'Actors,' 'Genres,' 'Budget,' and 'TMDB' as the key factors in our analysis. Since all audience rankings are strongly correlated with each other, we randomly selected 'TMDB' for our analysis. It's important to emphasize that similar results could be obtained if other rankings were chosen for this purpose.
-It's important to highlight that we standardized our values, ensuring that our results remain unaffected by variations in data scales.
-
-Let's conclude with a look at our last two linearity graphs.
+It's important to highlight that we standardized our values, ensuring that our results remain unaffected by variations in data scales. Let's conclude with a look at our last two linearity graphs. (Linearity eliminated 3/8)
  
-<img width="1095" alt="Screenshot 2023-11-01 at 3 30 26 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/669ceb54-c60c-46f5-93fa-2e0ad19aba72">
+As you can observe from the codes after creating the model first thing, I implemented was dividing my data into training and test datasets. One of the biggest concerns when creating regression models is overfitting and underfitting. Overfitting means that the model considers the initial data so high that whenever the same model is tried on new datasets it fails to predict. The best way to avoid this problem is by implementing train-test-split.
+ 
+In the graph below one of the axes represents actual values while the other represents predicted ones. When we look at the graph, we can see that they follow a discernible pattern rather than being random. Will analyze our predictions deeper in a while.  
 
-Upon performing predictions, we notice that our model encounters challenges in accurately forecasting profits as they increase, but it performs relatively well for lower profit ranges.There are reasons for that. Our data is not a random data and we have scraped most profited 1000 films ever. While model understand pattern on low profited movies of our data it is so hard to predict as profit increase. For example, Avatar is most profited film ever. Has that film resulted that profit from its genres, actors, rating? Probably none of them. At this stage release dates, market rivalries in that time period and budget divisions play more crucial role and our model is not aware of these factors.
+We observe an R-square of 0.41. It means our model explains 41% of profitability. It also means there will be some significant errors while implementing that model. What are the 59% remaining? The answer to this question can be Release date of the film, the Competitiveness of film market at this time or how much proportion of the budget is consumed on marketing. While Maximizing R-square is one concern of the Linear regression model, it is not the main concept. The aim is to bring out the best model possible from the data at hand. Income predictions are the most complicated ones and R-Square of 41 is not bad for that complexity.
+ 
 
-<img width="560" alt="Screenshot 2023-11-02 at 9 15 38 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/205fdea0-d7f4-4b06-914c-bcb2c61c9b78">
+When observing the distribution of residuals, we notice it is normally distributed, mean is so close to 0. These 2 results mean we are free from another 2 critical assumptions. (Zero Mean & Normality eliminated 5/8)
+  
+Notably, our analysis reveals no significant relationship between our independent variables and the residuals. This absence of endogeneity is favorable 
+outcome, indicating the model's robustness and successful avoidance of one more assumption. (Endogeneity eliminated 6/8) 
 
-While the residuals are substantial, this outcome aligns with our expectations, given the broad-scale nature of our data and an R-Square value of 0.42.  
-
-<img width="1053" alt="Screenshot 2023-11-01 at 3 31 59 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/1a7b4350-0e86-4896-b8a0-f607689d60be">
-
-Notably, our analysis reveals no significant relationship between our independent variables and the residuals. This absence of endogeneity is a favorable outcome, indicating the model's robustness and a successful violation of one less assumption.
-
-<img width="734" alt="Screenshot 2023-11-02 at 9 17 31 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/714ff674-e57e-4b1d-b2e3-0ef2c367bb81">
-
-Upon examining the weight coefficients, we gain meaningful insights. Notably, we observe logical trends: an increase in budget is associated with an increase in profit, and higher TMDB ratings also correlate with increased profits. Furthermore, we notice that films featuring more popular actors have higher weight coefficients, suggesting that 'fouractors' films generate more profit compared to 'noactor' films, and even 'threeactors' films exhibit better profitability.
-
-These logical outcomes provide assurance regarding the absence of omitted bias, which is a crucial concern in linear regressions. Omitted bias is a potentially detrimental assumption,, and its nonexistence within our model instills confidence in our findings.
-
-<img width="1104" alt="Screenshot 2023-11-01 at 3 33 43 PM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/5e4a67fc-770b-4791-b9b6-33c5fde9a2af">
+Autocorrelation is more relevant in time series forecasting where you are trying to predict values at different time points based on past values of the same variable. As our analysis doesn’t include such conditions, we can conclude there is nothing related to this assumption. (Autocorrelation eliminated 7/8)
+Upon examining the weight coefficients, we gain meaningful insights. Notably, we observe logical trends: an increase in budget is associated with an increase in profit, and higher TMDB ratings also correlate with increased profits. Furthermore, we notice that films featuring more popular actors have higher weight coefficients, suggesting that 'four actors' films generate more profit compared to 'no actor' films, and even 'three actors' films exhibit better profitability. While positive weights of numerical variables indicate a positive relationship between them and the dependent variable, positive dummy values mean the same thing in accordance with the benchmark dummy. Remember, when I mentioned “No Popular actor” column considered as Benchmark.
+These logical outcomes provide assurance regarding the absence of omitted bias, which is a crucial concern in linear regressions. Omitted bias is a potentially detrimental assumption, and its nonexistence within our model instills confidence in our findings. When this assumption occurs, there will be highly illogical patterns identifying that something highly important missing in the model. The best example of OVB happens when you try to predict house prices without the most important variable: Location. Without location, whole data will not make sense as some big houses have cheap prices while some of the smaller ones will have expensive prices. These kinds of illogical results are the best sign of OVB. While our model may lack some important data, it can still produce logical outcomes. This means that other variables in the model still provide valuable information for making predictions, even if some information is missing. We have managed to mitigate the impact of the omitted variable bias. This is a positive outcome, but it's important to acknowledge that the model may still have limitations due to the missing variable. Due to logical outcomes, we can consider this condition as partly avoided. (Omitted variable bias eliminated 7.5/8) 
+ 
 
 Conclusion:
+The most practical way to analyze residuals is by percentage as scales are so high. As we can see Model performed well on some Movies as little as 1% difference while there are also some outliers as -128%. These outliers are some breakpoints of our model and indicate something out of our model’s logic. We already mentioned the complexity of Income and its different factors in the movie industry.
+ 
 
-The dataset used in this assignment consists of the 1000 highest-grossing films in history. Opting for such a specific dataset may reduce the model's predictive power, but it significantly enhances the overall analysis of the movie industry. It allows for a more in-depth exploration of the factors and offers valuable insights for a comprehensive understanding of the industry. Given an R-Square value of 0.41, it's understandable that our predictions can account for 41% of profitability. This is a logical outcome, considering that the success of a film is influenced by numerous external factors, including competitive productions, release dates, and marketing budgets. These are substantial variables that our model may not fully capture. Nevertheless, achieving a 41% explanation rate in such complex scenarios is a commendable result, highlighting the model's adequacy.
+Keep in mind that the primary goal of modeling isn't just to optimize R-squared; it's to optimize R-squared from the available data and extract the maximum explanatory power from the data at hand. One can manipulate some data and maximize its R square. But this is quite illogical as it would break all patterns and understanding of data.  More valuable thing in that situation is getting a better understanding of the industry.
+It's also important to understand that our dataset has limitations. We lack critical information, such as marketing expenditures, market competition, and release dates, all of which significantly influence a movie's overall performance. These factors often result in movies following a plateau or exponential distribution pattern, starting strong and gradually tapering off. These exponential distributions can be considered as snowball effect in simple terms. Profit is equal to interest and interest is equal to money. Interest as a factor often results in a plateau or exponential distribution pattern, starting strong and gradually tapering off. That’s the reason why the release date plays a crucial role, how it impacts a movie's initial success. These are factors that fall into 59% that our model didn’t consider. Everything correlated with interest follows the same pattern, you can think of music industry or YouTube videos as well.
+ In this assignment, I made some valuable analyses as well as interpretations, gained insights into the movie industry, and explained some machine learning models with their details such as assumptions in simple terms.
+
+References:
+
+https://www.simplilearn.com/tutorials/statistics-tutorial/central-limit-theorem#:~:text=and%20its%20applications.-,What%20is%20the%20Central%20Limit%20Theorem%3F,equal%20to%20the%20population%20mean. 
+
+https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/learn/lecture/10777190#content 
+
+Povak, N. A., Hessburg, P. F., McDonnell, T. C., Reynolds, K. M., Sullivan, T. J., Salter, R. B., & Cosby, B. J. (2014). Machine learning and linear regression models to predict catchment-level base cation weathering rates across the southern Appalachian Mountain region, USA. Water Resources Research, 50(4), 2798–2814. https://doi.org/10.1002/2013WR014203
+![image](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/84059462-d5f8-43c3-962c-644afba0a71d)
+
+
+
+
+
+
 

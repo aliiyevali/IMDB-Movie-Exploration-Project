@@ -17,6 +17,8 @@ In the context of analysis, I present a scenario involving a film director faced
 To address this significant concern, I have strategically implemented the concept of confidence intervals. Specifically, I will consider a movie plot that prominently features the Adventure and Fantasy genres. The director is seeking answers to questions that revolve around the profitability of these genres. Does the plot require adjustments or perhaps a shift toward different genres? 
 In my pursuit of addressing this critical inquiry, I shall embark on a practical analysis.
 In the graph below, I commenced by plotting the data to assess its suitability for the implementation of confidence intervals.
+
+![download (1)](https://github.com/aliiyevali/Movie-Project/assets/147966223/6ea23ab4-fd57-4b47-b8db-8821112249b6)
  
 Upon initial examination, it becomes evident that the data deviates from a normal distribution. This is where the Central Limit Theorem (CLT) plays a pivotal role. Certain adjustments are made to facilitate the attainment of a normal distribution while retaining valuable information. 
 

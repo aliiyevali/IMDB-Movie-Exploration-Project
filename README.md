@@ -69,8 +69,8 @@ First, we need to decide on independent and dependent variables. Asking question
 
 ![download (3)](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/7bf73cb9-98bc-4b8e-96c2-262be9567272)
  
-	We can call this stage the independent variable elimination process because which values that will be selected for modelling are determined in that stage. In those stages, it is better to continue with most correlated variables with dependent variables. In our case, Profit is represented as ‘worldwide’ chosen as the dependent variable. After choosing core independent variables, it is time to analyze them deeper, making transformations if needed and analyzing their relationship with dependent variables deeper often as scatter plots. We already decided on the dependent variable, it is time to analyze its distribution and delete some outliers if there are any. Extreme outliers can increase the complexity of our data. It will create problems for the model to understand patterns and making better predictions.
-	After deciding on numerical values, I also need to utilize some dummies for better model performance. I decided to add two dummies. One includes how many top actors played in that film while the other will be about genres. These 2 can affect movie profit extensively. We already scraped the most popular actors from the IMDB website, so we need to create columns that showcase how many of them participating in that movie.  
+We can call this stage the independent variable elimination process because which values that will be selected for modelling are determined in that stage. In those stages, it is better to continue with most correlated variables with dependent variables. In our case, Profit is represented as ‘worldwide’ chosen as the dependent variable. After choosing core independent variables, it is time to analyze them deeper, making transformations if needed and analyzing their relationship with dependent variables deeper often as scatter plots. We already decided on the dependent variable, it is time to analyze its distribution and delete some outliers if there are any. Extreme outliers can increase the complexity of our data. It will create problems for the model to understand patterns and making better predictions.
+After deciding on numerical values, I also need to utilize some dummies for better model performance. I decided to add two dummies. One includes how many top actors played in that film while the other will be about genres. These 2 can affect movie profit extensively. We already scraped the most popular actors from the IMDB website, so we need to create columns that showcase how many of them participating in that movie.  
 
 <img width="1103" alt="Screenshot 2023-11-05 at 3 57 34 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/6981794a-5473-463c-a4bd-814f02647053">
 
@@ -93,7 +93,7 @@ These graphs show the same means and the distribution of those groups better. As
 <img width="1101" alt="Screenshot 2023-11-05 at 4 18 45 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/54751e4e-d76f-43d3-a72a-22b06df5b7f1">
  
 We observed our thesis was correct. While the third group included more general genres the last one is so specific. You can imagine our third group movies like Deadpool while the last one can be imagined as Titanic ones.
-	Our numerical variables are ready, our Dummies & Clusters are ready, and we analyzed data very deeply by including visualizations with the help of Tableau dashboards, it is time to create an actual model.
+Our numerical variables are ready, our Dummies & Clusters are ready, and we analyzed data very deeply by including visualizations with the help of Tableau dashboards, it is time to create an actual model.
  
 Part 5 – Linear Regression Model
 

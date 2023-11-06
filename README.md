@@ -136,7 +136,7 @@ As you can observe from the codes after creating the model first thing, I implem
  
 In the graph below one of the axes represents actual values while the other represents predicted ones. When we look at the graph, we can see that they follow a discernible pattern rather than being random. Will analyze our predictions deeper in a while.  
 
-<img width="560" alt="Screenshot 2023-11-02 at 9 15 38 AM" src="https://github.com/aliiyevali/Movie-Project/assets/147966223/205fdea0-d7f4-4b06-914c-bcb2c61c9b78">
+![download (4)](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/3d486ba9-2d9b-479f-b7b9-603a43c46906)
 
 We observe an R-square of 0.41. It means our model explains 41% of profitability. It also means there will be some significant errors while implementing that model. What are the 59% remaining? The answer to this question can be Release date of the film, the Competitiveness of film market at this time or how much proportion of the budget is consumed on marketing. While Maximizing R-square is one concern of the Linear regression model, it is not the main concept. The aim is to bring out the best model possible from the data at hand. Income predictions are the most complicated ones and R-Square of 41 is not bad for that complexity.
 

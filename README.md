@@ -122,7 +122,7 @@ In the process of examining multicollinearity, I decided to omit certain columns
  
 The columns of our final dataset and their VIFs are represented below. Their VIF values remain within an acceptable range. (Multicollinearity eliminated 2/8) 
 
-<img width="1077" alt="Screenshot 2023-11-05 at 4 09 24 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/762385cb-a684-44d0-8413-ac98f967b0eb">
+<img width="1096" alt="Screenshot 2023-11-05 at 4 33 48 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/5464c055-4eab-4e78-8ccd-f3846d59cfcb">
 
 As a result, we proceeded with 'Actors,' 'Genres,' 'Budget,' and 'TMDB' as the key factors in our analysis. Since all audience rankings are strongly correlated with each other, we randomly selected 'TMDB' for our analysis. It's important to emphasize that similar results could be obtained if other rankings were chosen for this purpose.
 It's important to highlight that we standardized our values, ensuring that our results remain unaffected by variations in data scales. Let's conclude with a look at our last two linearity graphs. (Linearity eliminated 3/8)

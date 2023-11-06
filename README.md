@@ -82,7 +82,7 @@ Our first dummy columns are ready, We need to create one that contains data for 
 The elbow method often shows one break point looks like an elbow that after that point, line starts to plateau. Unfortunately, it is not that easy in our case so we implemented the method by different k’s and decided on model best groups when k is equal to 6.
 As our case includes Different genres as different columns there is no logical graphical way to show results in that way. But we can interpret results with our mathematical skills.
 
-<img width="1077" alt="Screenshot 2023-11-05 at 4 09 24 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/762385cb-a684-44d0-8413-ac98f967b0eb">
+<img width="1109" alt="Screenshot 2023-11-05 at 4 30 38 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/c432608d-f1be-4a3a-b468-bf41deeda345">
  
 The first dimension of parting was profit. As we can see profits of different clusters differ significantly.
 

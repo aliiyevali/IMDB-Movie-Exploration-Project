@@ -12,7 +12,8 @@ Scraping was the first stage of analysis. At the end of the first stage, we had 
 
 Part 1: Storing Data to SQL Warehouse
 
-After scraping all the data, it is imperative to store it in SQL Warehouses, which serve as a robust and versatile solution for data management. SQL (Structured Query Language) stands as a powerful tool for efficiently and securely storing, managing and pulling desired data with those queries . In our project, SQL plays a pivotal role, primarily employed for data storage, executing complex join and merge operations. The results below demonstrate the successful storage of data in SQL tables.  The result below accomplished by connecting to SQL database from Python Jupyter Notebook.![image](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/175fb519-f72d-4611-9c53-9352fe28ef10)
+After scraping all the data, it is imperative to store it in SQL Warehouses, which serve as a robust and versatile solution for data management. SQL (Structured Query Language) stands as a powerful tool for efficiently and securely storing, managing and pulling desired data with those queries . In our project, SQL plays a pivotal role, primarily employed for data storage, executing complex join and merge operations. The results below demonstrate the successful storage of data in SQL tables.  The result below accomplished by connecting to SQL database from Python Jupyter Notebook.
+<img width="1220" alt="Screenshot 2023-11-07 at 12 58 19 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/d5285ce7-ef8c-45dc-adfb-d74dde6f95b7">
 
 Part 2: Confidence Intervals
 

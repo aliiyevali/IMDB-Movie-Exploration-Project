@@ -1,7 +1,7 @@
 Results and Interpretations from Comprehensive Movie Analysis
 
 
-Introduction
+# Introduction
 
 In this project, I will delve into the captivating world of movie analysis, offering insights into intriguing facts, addressing key questions, and elucidating the intricacies of our analytical approach.
 Let's begin by outlining the foundational elements of our dataset. It has been meticulously curated through the scraping of data from three distinct websites, ensuring a diverse range of data types and information. This diversity is crucial, as it accommodates the multifaceted nature of movie analysis, catering to a variety of analytical objectives. 

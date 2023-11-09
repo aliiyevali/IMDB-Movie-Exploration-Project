@@ -45,17 +45,16 @@ To answer that question, let’s investigate scatter plots and correlation coeff
 
 ![download (2)](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/c123c595-9b2a-4392-a368-f6e264b0b0fe)
 
- 
 While inspecting distributions we can clearly see that profit distribution is far from normality. There is also not a strong linear relationship between these 2. All these findings lead us to choose Spearman's rank correlation coefficient, which is a non-parametric measure of rank correlation that assesses how well the relationship between two variables can be described using a monotonic function.
 
+<img width="1096" alt="Screenshot 2023-11-09 at 2 06 37 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/f5ac36ca-6ffe-4484-9aeb-a2abad25550e">
 
 As you can see the null hypothesis (H0) posits that the Spearman's rank correlation coefficient (rho) is zero, indicating no relationship. Conversely, the alternative hypothesis (H1) suggests that rho is not equal to zero, implying a significant relationship between the two variables.
 The Spearman correlation coefficient and the associated p-value are computed. For verification purposes, I calculated the t-statistic by myself. This is done to ensure the accuracy of the p-value obtained from software calculations. I concluded that this p-value is extremely low and almost impossible to find from the table, which is why software is used to determine the exact number. The final part of the code checks whether the p-value is greater than the significance level alpha. Since the p-value is less than alpha, the result indicates that the null hypothesis is rejected, and there is a statistically significant correlation between worldwide earnings and IMDB ratings.
 
+<img width="1085" alt="Screenshot 2023-11-09 at 2 15 44 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/59cf6496-58a3-41cc-a89f-7b82b9017297">
 
 As a result, there is a correlation between the worldwide earnings and IMDB ratings of movies at 95% significance level . However, the correlation coefficient of 0.219 suggests that while the correlation is statistically significant, it is weak in strength., as we mentioned earlier. 
-
-
 
 Part 4: Visualizations
 

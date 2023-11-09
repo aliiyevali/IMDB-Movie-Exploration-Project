@@ -10,12 +10,12 @@ Scraping was the first stage of analysis. At the end of the first stage, we had 
 
 <img width="782" alt="Screenshot 2023-11-05 at 2 58 27 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/ee52eb3b-66a2-4cb5-8c4f-a90e47781927">
 
-Part 1: Storing Data to SQL Warehouse
+# Part 1: Storing Data to SQL Warehouse
 
 After scraping all the data, it is imperative to store it in SQL Warehouses, which serve as a robust and versatile solution for data management. SQL (Structured Query Language) stands as a powerful tool for efficiently and securely storing, managing and pulling desired data with those queries . In our project, SQL plays a pivotal role, primarily employed for data storage, executing complex join and merge operations. The results below demonstrate the successful storage of data in SQL tables.  The result below accomplished by connecting to SQL database from Python Jupyter Notebook.
 <img width="1220" alt="Screenshot 2023-11-07 at 12 58 19 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/d5285ce7-ef8c-45dc-adfb-d74dde6f95b7">
 
-Part 2: Confidence Intervals
+# Part 2: Confidence Intervals
 
 In the context of analysis, I present a scenario involving a film director faced with a pivotal decision - whether to invest in a movie based on an exceptional plot. This director's dilemma lies in the uncertainty of whether the chosen plot will meet his expected objectives in terms of profit. 
 To address this significant concern, I have strategically implemented the concept of confidence intervals. Specifically, I will consider a movie plot that prominently features the Adventure and Fantasy genres. The director is seeking answers to questions that revolve around the profitability of these genres. Does the plot require adjustments or perhaps a shift toward different genres? 
@@ -35,7 +35,7 @@ As the data conforms to a normal distribution, I proceed with the implementation
 The decision to maintain the same genres or opt for changes ultimately rests with the director and his financial objectives. 
 However, the director couldn’t make up his mind and expressed an interest in examining the deeper analysis of different genres. I will fulfill this request during the visualization stage of the project.
 
-Part 3: Hypothesis testing
+# Part 3: Hypothesis testing
 
 <img width="1098" alt="Screenshot 2023-11-05 at 3 12 02 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/34d81c02-f3eb-443b-bd90-6a0ecdace108">
 
@@ -56,7 +56,7 @@ The Spearman correlation coefficient and the associated p-value are computed. Fo
 
 As a result, there is a correlation between the worldwide earnings and IMDB ratings of movies at 95% significance level . However, the correlation coefficient of 0.219 suggests that while the correlation is statistically significant, it is weak in strength., as we mentioned earlier. 
 
-Part 4: Visualizations
+# Part 4: Visualizations
 
 <img width="1440" alt="Screenshot 2023-11-05 at 10 19 39 PM" src="https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/211b6e06-b032-40c7-b8f2-f7583c3f5479">
 
@@ -75,7 +75,7 @@ The boxplots for genre profits present a visual summary of the profitability dis
 •	Time Series Analysis of Foreign and Domestic Profit:
 This time series analysis provides a historical perspective on how foreign and domestic profits have evolved over the years. The red line represents foreign profit while the black line demonstrates domestic one. Tracking the trajectory of profits helps stakeholders in the film industry identify trends and make informed decisions about distribution strategies, target audiences, and market dynamics. It's an essential tool for forecasting future profitability.
 
-Part 5: Clustering & Preparing for Model
+# Part 5: Clustering & Preparing for Model
 
 First, we need to decide on independent and dependent variables. Asking questions like What is the best metric for determining movie success can also be intuitive in that first stage of model creation. Furthermore, answering this question requires deep knowledge of data that why data analysis is the most crucial step. For better understanding, I created a color matrix that displays the relationship between core variables. How these variables have been  assessed as core and the reason why they have been chosen over others will be clarified in the Multicollinearity assumption and VIF calculations section. 
 
@@ -107,7 +107,7 @@ These graphs show the same means and the distribution of those groups better. As
 We observed our thesis was correct. While the third group included more general genres the last one is so specific. You can imagine our third group movies like Deadpool while the last one can be imagined as Titanic ones.
 Our numerical variables are ready, our Dummies & Clusters are ready, and we analyzed data very deeply by including visualizations with the help of Tableau dashboards, it is time to create an actual model.
  
-Part 6: Linear Regression Model
+# Part 6: Linear Regression Model
 
 Let’s start with addressing all conditions or assumptions that need to be met in the linear regressions. 
 1.	Zero mean

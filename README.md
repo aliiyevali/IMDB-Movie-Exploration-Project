@@ -105,12 +105,14 @@ I began with the Linear Regression model, which initially performed well on the 
 ![deyisim4](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/c1ba2a5b-02eb-4956-8b9b-46ae6f7b521c)
 
 Random Forest & XGBoosting
+
 Random Forest and XGBoosting are indeed powerful performance models. After extensive hyperparameter tuning efforts, I identified the optimal parameters for both models, achieving the highest R-squared values.  However, in my case, I had to exercise caution regarding overfitting. While they demonstrated exceptional performance on the training data, their performance deteriorated significantly when applied to unseen data.
 Predictions for XGBoosting and Random Forest are acceptable, but the lingering issue of overfitting remains a significant concern. The model cannot guarantee consistent performance on numerous unseen datasets due to the presence of overfitting, which raises doubts about its reliability. 
 
 ![deyisim6](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/43781838-9e1d-420c-bd53-940d80697eee)
 
 Neural Network
+
 The training process of the neural network, as depicted in the plots, demonstrates a well-conducted learning phase with both the loss and mean absolute error (MAE) metrics showing significant improvement after the initial epoch and stabilizing as training progresses. The convergence of the training and validation loss, as well as the MAE, suggests that the model is generalizing well without signs of overfitting, where overfitting would be indicated by a divergence where validation loss increases while training loss continues to decrease. Similarly, there is no indication of underfitting, which would be evident if both training and validation errors remained high, implying that the model has sufficient complexity to capture the underlying patterns in the data. The early stopping mechanism appears to have effectively prevented unnecessary computations by halting the training at an optimal point, avoiding the risk of overfitting by not iterating beyond the point of improvement. The model's performance on both sets being close in value indicates that it should perform consistently on both seen and unseen data. Overall, the plots suggest a successful training outcome with the model poised to make accurate predictions.
 
 ![deyisim7](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/aee6bfbe-db06-46f6-8bdd-d7d8e0376008)
@@ -125,7 +127,8 @@ The Q-Q plot of residuals indicates that the residuals from the regression model
 
 ![deyisim5](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/2bf09e18-b80b-4723-8996-c7cb938cccf8)
 
-Conclusion:
+# Conclusion:
+
 In Inferential statistics I found out why some assumptions are right and how must a director approach to his plots’ genre selection. When it comes to predictive statistics, My implementation started with Linear regression. Linear regression displayed strong performance on the training dataset but fell short when applied to unseen data. Recognizing the challenge posed by the inherently unpredictable nature of income prediction, I sought to address this issue by exploring more intricate models. While Ridge and Lasso regression were capable of handling multicollinearity and overfitting concerns, our primary challenge turned out to be underfitting, and these models did not provide a solution. Consequently, I proceeded to experiment with Random Forest and XGBoosting as potential alternatives. Although they achieved exceptional results on the training data, they encountered issues with overfitting. This prompted me to turn to a Neural Network approach, which allowed me to strike a perfect balance between model complexity and predictive performance. This is why I favor this model over others.![image]
 
 References:

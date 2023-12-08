@@ -80,54 +80,50 @@ This time series analysis provides a historical perspective on how foreign and d
 
 First, we need to decide on independent and dependent variables. Asking questions like ‘What is the best metric for determining movie success can also be intuitive in that first stage of model creation’. For better understanding, I created a color matrix that displays the relationship between core variables. 
 
+![Deyisim](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/35c06927-e9aa-48aa-82fb-13aba7578240)
 
-
-
-
-I have decided to predict Income by Budget, Rank, Distributor, Year, Genres and domestic Opening of movies. 
-	 After deciding on numerical values, I also need to utilize some dummies for better model performance. I decided to add two dummies. One includes distributor of film while the other will be about genres. These 2 can affect movie profit extensively. 
+I have decided to predict Income by Budget, Rank, Distributor, Year, Genres and domestic Opening of movies. After deciding on numerical values, I also need to utilize some dummies for better model performance. I decided to add two dummies. One includes distributor of film while the other will be about genres. These 2 can affect movie profit extensively. 
 I need to create categorical column that contains data for genres. I will do it by the help of k-means clustering and elbow method. This machine learning algorithm will group movies for us based on their genres and profitability. However, one question comes to mind. How many groups must be included? The elbow method comes in to help us determine it. 
+
+![deyisim2](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/75c5972c-11e4-4460-b585-83495ce04abb)
 
 The elbow method often shows one break point looks like an elbow that after that point, line starts to plateau. Unfortunately, it is not that easy in our case so we implemented the method by different k’s and decided on model best groups when k is equal to 8.
 The first dimension of parting was profit. As we can see profits of different clusters differ significantly.
 
-
-
+![deyisim3](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/b2b6b63e-cf0e-4aff-9633-63f33217ff88)
 
 These graphs show the same means and the distribution of those groups better. As we notice the number of them is different, while the first graph has more data the last one has less. The third group probably includes more general genres while the last one is more specific. You can imagine our third group movies like Deadpool while the last one can be imagined as Titanic ones. It is time to create an actual model.
 
-
- 
-
-
- 
 # Part 6: Linear Regression Model
 
 I have implemented a range of regression models, including Linear, Ridge, Lasso, Random Forest, XGBoost, and a Neural Network. My decision to use these models was based on their performances and a thorough analysis of error metrics.
+
 Linear Regression
+
 I began with the Linear Regression model, which initially performed well on the training dataset. However, when I applied it to the test set, it produced remarkably poor results. This led me to conclude that we required a more complex model with improved predictive capabilities. Ridge and Lasso regressions also implemented but there is no improvement as our model struggles with underfitting while these models help with overfitting and multicollinearity. Poor performance of linear regression on unseen data:
+
+![deyisim4](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/c1ba2a5b-02eb-4956-8b9b-46ae6f7b521c)
 
 Random Forest & XGBoosting
 Random Forest and XGBoosting are indeed powerful performance models. After extensive hyperparameter tuning efforts, I identified the optimal parameters for both models, achieving the highest R-squared values.  However, in my case, I had to exercise caution regarding overfitting. While they demonstrated exceptional performance on the training data, their performance deteriorated significantly when applied to unseen data.
 Predictions for XGBoosting and Random Forest are acceptable, but the lingering issue of overfitting remains a significant concern. The model cannot guarantee consistent performance on numerous unseen datasets due to the presence of overfitting, which raises doubts about its reliability. 
 
+![deyisim6](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/43781838-9e1d-420c-bd53-940d80697eee)
 
 Neural Network
 The training process of the neural network, as depicted in the plots, demonstrates a well-conducted learning phase with both the loss and mean absolute error (MAE) metrics showing significant improvement after the initial epoch and stabilizing as training progresses. The convergence of the training and validation loss, as well as the MAE, suggests that the model is generalizing well without signs of overfitting, where overfitting would be indicated by a divergence where validation loss increases while training loss continues to decrease. Similarly, there is no indication of underfitting, which would be evident if both training and validation errors remained high, implying that the model has sufficient complexity to capture the underlying patterns in the data. The early stopping mechanism appears to have effectively prevented unnecessary computations by halting the training at an optimal point, avoiding the risk of overfitting by not iterating beyond the point of improvement. The model's performance on both sets being close in value indicates that it should perform consistently on both seen and unseen data. Overall, the plots suggest a successful training outcome with the model poised to make accurate predictions.
 
+![deyisim7](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/aee6bfbe-db06-46f6-8bdd-d7d8e0376008)
 
 Result: The model has enough complexity to learn from the training data and the ability to generalize this learning to validation data it has not seen before, resulting in good predictive performance.
 
 The scatter plot showcases the percentage differences between actual and predicted values against the actual values on the original scale, revealing that a majority of the predictions are clustered near the zero line, indicating a generally accurate model on a percentage basis. The presence of outliers with high percentage errors suggests that while the model is effective for most of the data, there are specific instances where it performs not-well. However, the presence of some outliers in my data is a natural characteristic. Removing them would lead to a loss of valuable insights and potentially result in overfitting. The plot also highlights the sensitivity of percentage errors to actual values near zero, where even small deviations can result in large percentage discrepancies. Despite these outliers, the lack of a discernible pattern across the range of actual values suggests the model does not suffer from systematic bias.
 
-
-
-
+![deyisim9](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/8d91ae67-b1a8-41ec-9620-fb2bdc6c85c0)
 
 The Q-Q plot of residuals indicates that the residuals from the regression model approximate normality in the central quantiles, as evidenced by their alignment with the red reference line. The bulk of the residuals conforming to the expected normal distribution is a positive indication of model fit. 
 
-
-
+![deyisim5](https://github.com/aliiyevali/IMDB-Movie-Exploration-Project/assets/147966223/2bf09e18-b80b-4723-8996-c7cb938cccf8)
 
 Conclusion:
 In Inferential statistics I found out why some assumptions are right and how must a director approach to his plots’ genre selection. When it comes to predictive statistics, My implementation started with Linear regression. Linear regression displayed strong performance on the training dataset but fell short when applied to unseen data. Recognizing the challenge posed by the inherently unpredictable nature of income prediction, I sought to address this issue by exploring more intricate models. While Ridge and Lasso regression were capable of handling multicollinearity and overfitting concerns, our primary challenge turned out to be underfitting, and these models did not provide a solution. Consequently, I proceeded to experiment with Random Forest and XGBoosting as potential alternatives. Although they achieved exceptional results on the training data, they encountered issues with overfitting. This prompted me to turn to a Neural Network approach, which allowed me to strike a perfect balance between model complexity and predictive performance. This is why I favor this model over others.![image]
